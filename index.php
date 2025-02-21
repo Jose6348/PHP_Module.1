@@ -10,28 +10,52 @@
 <body>
 
     <?php
-    $saudacao = "Oi, ";
-    $Nome = "José Jorge";
-    $titulo = $saudacao . $Nome;
-    $subtitulo = "Seja bem vindo ao meu portfólio";
+    $projeto = "Meu protfolio";
+    $finalizado = true ;
+    $dataDoProjeto = "2025-02-20";
+    $descricao = "Projeto de portfolio em Htm e PHP";
     ?>
 
 
 
-    <h1>
-        <?php
+     <h2><?=$projeto?></h2> 
+     <p><?=$descricao?></p>
+     <?=$dataDoProjeto?>
 
+     <div>Projeto
+        <div>
+        <?php if ($finalizado): ?>
+           <span>Projeto finalizado </span> 
+        <?php else: ?> Nao finalizado
+        <?php endif; ?>
+        </div>
+       
 
-        echo $titulo;
+     </div>
 
+     <div>
+        <div><?$dataDoProjeto?></div>
+        <div>
+
+        <div>
+        <?php 
+        if($finalizado){
+            echo "Projeto Finalizado";
+        }
+        else{
+            echo "X - Não finalizado";
+        }
         ?>
-    </h1>
 
-    <h2>
-        <?=
-        $subtitulo
-        ?>
-    </h2>
+        </div>
+      
+        </div>
+
+     </div>
+
+
+    
+
 
 </body>
 
