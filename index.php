@@ -1,3 +1,17 @@
+<?php 
+$finalizado = true;
+$nome = "Projeto 1";
+
+function verificarSeEstaFinalizado(){
+    global $finalizado;
+    if ($finalizado == true){
+        echo "O projeto está finalizado";
+    } else {
+        echo "O projeto não está finalizado";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,72 +23,11 @@
 
 <body>
 
-     <!-- Variáveis -->
-
-    <?php
-    $projeto = "Meu protfolio";
-    $finalizado = true;
-    $dataDoProjeto = "2025-02-20";
-    $descricao = "Projeto de portfolio em Htm e PHP";
-
-    // Listas 
-
-    $projetos = [
-
-        "Meu portfolio",
-        "Lista de tarefas",
-        "Controle de Leitura de Livros",
-        "Mais um projeto"
-    ]
-    ?>
-
-
-    <!-- Declaraçao de variáveis  -->
-
-    <h2><?= $projeto ?></h2>
-    <p><?= $descricao ?></p>
-    <?= $dataDoProjeto ?>
-
-    <ul>
-        <?php foreach ($projetos as $projeto)
-            echo "<li>$projeto</li>";
-        ?>
-    </ul>
-
-    <!-- <div>Projeto
-        <div>
-            <?php if ($finalizado): ?>
-                <span>Projeto finalizado </span>
-            <?php else: ?> Nao finalizado
-            <?php endif; ?>
-        </div> -->
-
-
-    </div> 
-
-            <!-- Condições -->
-    <!-- <div>
-        <div><?=$dataDoProjeto ?></div>
-        <div>
-
-            <div>
-                <?php
-                if ($finalizado) {
-                    echo "Projeto Finalizado";
-                } else {
-                    echo "X - Não finalizado";
-                }
-                ?>
-
-            </div>
-
-        </div> -->
-
-    </div>
-
-
-
-
+<?php 
+$finalizado = true;
+$nome = "Projeto 1";
+verificarSeEstaFinalizado();
+?>
 
 </body>
 
